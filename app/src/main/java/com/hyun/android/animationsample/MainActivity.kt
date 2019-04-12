@@ -85,7 +85,6 @@ class MainActivity : AppCompatActivity() {
             }.start()
 
         }
-
     }
 
     private fun transYAni() {
@@ -188,8 +187,6 @@ class MainActivity : AppCompatActivity() {
                 btn_rotation_complex.scaleY = 0.5f
 
             }.start()
-
-
         }
     }
 }
