@@ -1,487 +1,488 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:scrollbars="none">
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="none">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="32dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="32dp">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_horizontal"
-            android:text="버튼 클릭"
-            android:textColor="@android:color/black"
-            android:textSize="36dp" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="버튼 클릭"
+                android:textColor="@android:color/black"
+                android:textSize="36dp"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_horizontal"
-            android:text="Scale Animation (크기 조절)"
-            android:textColor="@android:color/black" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="Scale Animation (크기 조절)"
+                android:textColor="@android:color/black"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strograycc_solno"
-            android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strograycc_solno"
+                android:orientation="vertical">
 
 
             <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                 <Button
-                    android:id="@+id/btn_scaleX"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/circle_black"
-                    android:text="가로 조절"
-                    android:textColor="@android:color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/btn_scaleY"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                        android:id="@+id/btn_scaleX"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/circle_black"
+                        android:text="가로 조절"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_scaleY"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                 <Button
-                    android:id="@+id/btn_scaleY"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/circle_black"
-                    android:text="세로 조절"
-                    android:textColor="@android:color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/btn_scaleXY"
-                    app:layout_constraintStart_toEndOf="@+id/btn_scaleX"
-                    app:layout_constraintTop_toTopOf="parent" />
+                        android:id="@+id/btn_scaleY"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/circle_black"
+                        android:text="세로 조절"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_scaleXY"
+                        app:layout_constraintStart_toEndOf="@+id/btn_scaleX"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                 <Button
-                    android:id="@+id/btn_scaleXY"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/circle_black"
-                    android:text="가로/세로\n조절"
-                    android:textColor="@android:color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/btn_scaleY"
-                    app:layout_constraintTop_toTopOf="parent" />
+                        android:id="@+id/btn_scaleXY"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/circle_black"
+                        android:text="가로/세로\n조절"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btn_scaleY"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
             </android.support.constraint.ConstraintLayout>
 
             <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                 <Button
-                    android:id="@+id/btn_scaleX_"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/circle_black"
-                    android:scaleX="0.5"
-                    android:text="가로 조절"
-                    android:textColor="@android:color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/btn_scaleY_"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                        android:id="@+id/btn_scaleX_"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/circle_black"
+                        android:scaleX="0.5"
+                        android:text="가로 조절"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_scaleY_"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                 <Button
-                    android:id="@+id/btn_scaleY_"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/circle_black"
-                    android:scaleY="0.5"
-                    android:text="세로 조절"
-                    android:textColor="@android:color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/btn_scaleXY_"
-                    app:layout_constraintStart_toEndOf="@+id/btn_scaleX_"
-                    app:layout_constraintTop_toTopOf="parent" />
+                        android:id="@+id/btn_scaleY_"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/circle_black"
+                        android:scaleY="0.5"
+                        android:text="세로 조절"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_scaleXY_"
+                        app:layout_constraintStart_toEndOf="@+id/btn_scaleX_"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                 <Button
-                    android:id="@+id/btn_scaleXY_"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/circle_black"
-                    android:scaleX="0.5"
-                    android:scaleY="0.5"
-                    android:text="가로/세로\n조절"
-                    android:textColor="@android:color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/btn_scaleY_"
-                    app:layout_constraintTop_toTopOf="parent" />
+                        android:id="@+id/btn_scaleXY_"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/circle_black"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:text="가로/세로\n조절"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btn_scaleY_"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
             </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_horizontal"
-            android:text="Alpha Animation (불투명도 조절)"
-            android:textColor="@android:color/black" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="Alpha Animation (불투명도 조절)"
+                android:textColor="@android:color/black"/>
 
         <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strograycc_solno">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strograycc_solno">
 
             <Button
-                android:id="@+id/btn_alpha_on"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:alpha="0.1"
-                android:background="@drawable/circle_blue"
-                android:text="불투명하게"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_alpha_off"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_alpha_on"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:alpha="0.1"
+                    android:background="@drawable/circle_blue"
+                    android:text="불투명하게"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_alpha_off"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <Button
-                android:id="@+id/btn_alpha_off"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/circle_blue"
-                android:text="투명하게"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_alpha_on"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_alpha_off"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circle_blue"
+                    android:text="투명하게"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_alpha_on"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
         </android.support.constraint.ConstraintLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_horizontal"
-            android:text="translationX Animation (가로로 이동)"
-            android:textColor="@android:color/black" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="translationX Animation (가로로 이동)"
+                android:textColor="@android:color/black"/>
 
         <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strograycc_solno">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strograycc_solno">
 
             <Button
-                android:id="@+id/btn_transX_left"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/circle_green"
-                android:text="왼쪽으로"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toTopOf="@+id/btn_transX_right"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_transX_left"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circle_green"
+                    android:text="왼쪽으로"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_transX_right"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <Button
-                android:id="@+id/btn_transX_right"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/circle_green"
-                android:text="오른쪽으로"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_transX_left" />
+                    android:id="@+id/btn_transX_right"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circle_green"
+                    android:text="오른쪽으로"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_transX_left"/>
 
         </android.support.constraint.ConstraintLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_horizontal"
-            android:text="translationY Animation (세로로 이동)"
-            android:textColor="@android:color/black" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="translationY Animation (세로로 이동)"
+                android:textColor="@android:color/black"/>
 
         <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@drawable/strograycc_solno">
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/strograycc_solno">
 
             <Button
-                android:id="@+id/btn_transY_down"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/circle_orange"
-                android:text="아래쪽으로"
-                android:textColor="@android:color/white"
-                app:layout_constraintEnd_toStartOf="@+id/btn_transY_up"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_transY_down"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/circle_orange"
+                    android:text="아래쪽으로"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_transY_up"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <Button
-                android:id="@+id/btn_transY_up"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/circle_orange"
-                android:text="위쪽으로"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_transY_down" />
+                    android:id="@+id/btn_transY_up"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circle_orange"
+                    android:text="위쪽으로"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_transY_down"/>
 
         </android.support.constraint.ConstraintLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_horizontal"
-            android:text="rotation Animation (회전)"
-            android:textColor="@android:color/black" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="rotation Animation (회전)"
+                android:textColor="@android:color/black"/>
 
         <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strograycc_solno">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strograycc_solno">
 
             <Button
-                android:id="@+id/btn_rotationX"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rectangle_red"
-                android:text="X축 회전"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_rotationY"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_rotationX"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rectangle_red"
+                    android:text="X축 회전"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_rotationY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <Button
-                android:id="@+id/btn_rotationY"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rectangle_red"
-                android:text="Y축 회전"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_rotation"
-                app:layout_constraintStart_toEndOf="@+id/btn_rotationX"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_rotationY"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rectangle_red"
+                    android:text="Y축 회전"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_rotation"
+                    app:layout_constraintStart_toEndOf="@+id/btn_rotationX"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <Button
-                android:id="@+id/btn_rotation"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rectangle_red"
-                android:text="회전"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_rotationY"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_rotation"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rectangle_red"
+                    android:text="회전"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_rotationY"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
         </android.support.constraint.ConstraintLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_horizontal"
-            android:text="Alpha+Scale Animation\n(투명도 크기 조절)"
-            android:textColor="@android:color/black" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="Alpha+Scale Animation\n(투명도 크기 조절)"
+                android:textColor="@android:color/black"/>
 
         <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strograycc_solno">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strograycc_solno">
 
             <Button
-                android:id="@+id/btn_alpha_complex_on"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:alpha="0.1"
-                android:background="@drawable/circle_blue"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:text="불투명하게"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_alpha_complex_off"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_alpha_complex_on"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:alpha="0.1"
+                    android:background="@drawable/circle_blue"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:text="불투명하게"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_alpha_complex_off"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <Button
-                android:id="@+id/btn_alpha_complex_off"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/circle_blue"
-                android:text="투명하게"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_alpha_complex_on"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_alpha_complex_off"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circle_blue"
+                    android:text="투명하게"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_alpha_complex_on"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
         </android.support.constraint.ConstraintLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_horizontal"
-            android:text="translationX+Alpha+Scale Animation\n(가로, 투명도, 크기 조절)"
-            android:textColor="@android:color/black" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="translationX+Alpha+Scale Animation\n(가로, 투명도, 크기 조절)"
+                android:textColor="@android:color/black"/>
 
         <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strograycc_solno">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strograycc_solno">
 
             <Button
-                android:id="@+id/btn_transX_complex_left"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/circle_green"
-                android:text="왼쪽으로"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toTopOf="@+id/btn_transX_complex_right"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_transX_complex_left"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circle_green"
+                    android:text="왼쪽으로"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_transX_complex_right"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <Button
-                android:id="@+id/btn_transX_complex_right"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:alpha="0.1"
-                android:background="@drawable/circle_green"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:text="오른쪽으로"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_transX_complex_left" />
+                    android:id="@+id/btn_transX_complex_right"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:alpha="0.1"
+                    android:background="@drawable/circle_green"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:text="오른쪽으로"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_transX_complex_left"/>
 
         </android.support.constraint.ConstraintLayout>
 
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="12dp"
-            android:gravity="center_horizontal"
-            android:text="rotation+scale Animation\n(회전, 크기 조절)"
-            android:textColor="@android:color/black" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="rotation+scale Animation\n(회전, 크기 조절)"
+                android:textColor="@android:color/black"/>
 
         <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strograycc_solno">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1000dp"
+                android:background="@drawable/strograycc_solno">
 
             <Button
-                android:id="@+id/btn_rotationX_complex"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rectangle_red"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:text="X축 회전"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_rotationY_complex"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_rotationX_complex"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rectangle_red"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:text="X축 회전"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_rotationY_complex"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <Button
-                android:id="@+id/btn_rotationY_complex"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rectangle_red"
-                android:text="Y축 회전"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btn_rotation_complex"
-                app:layout_constraintStart_toEndOf="@+id/btn_rotationX_complex"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_rotationY_complex"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rectangle_red"
+                    android:text="Y축 회전"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_rotation_complex"
+                    app:layout_constraintStart_toEndOf="@+id/btn_rotationX_complex"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <Button
-                android:id="@+id/btn_rotation_complex"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rectangle_red"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:text="회전"
-                android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_rotationY_complex"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/btn_rotation_complex"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rectangle_red"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:text="회전"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_rotationY_complex"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
         </android.support.constraint.ConstraintLayout>
     </LinearLayout>
