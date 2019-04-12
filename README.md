@@ -25,3 +25,4 @@ https://medium.com/@gus0000123/android-viewpropertyanimator%EB%A5%BC-%ED%99%9C%E
 
 ## 8. 회전 + 크기 
 ![Overview](https://github.com/gus0000123/AnimationSample/blob/master/gif/8.rotation_scale_animation.gif)
+
