@@ -3,7 +3,7 @@
 https://medium.com/@gus0000123/android-viewpropertyanimator%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%98%EC%97%AC-animation-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0-2efb25397035
 
 ## 1. 크기 
-https://github.com/gus0000123/AnimationSample/blob/master/gif/1.scale_animation.gif
+![Overview](https://github.com/gus0000123/AnimationSample/blob/master/gif/1.scale_animation.gif)
 
 ## 2. 투명도 
 https://github.com/gus0000123/AnimationSample/blob/master/gif/2.alpha_animation.gif
